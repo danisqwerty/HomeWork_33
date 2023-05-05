@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCF7"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textOut"
+        android:layout_width="316dp"
+        android:layout_height="95dp"
+        android:background="#FFF4CD"
+        android:gravity="center"
+        android:hint="ТРЕК"
+        android:textColor="#0E9E7C"
+        android:textColorHint="#388E3C"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRaw"
+        android:layout_width="382dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:backgroundTint="#052DF4"
+        android:onClick="onClickSource"
+        android:text="Metamorphosis"
+        android:textColor="#9D00FF"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOut"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PHONK"
+        android:textColor="#CCB50A0A"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRaw2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnResume"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:onClick="onClick"
+            android:padding="14dp"
+            android:text="PLAY" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:onClick="onClick"
+            android:padding="14dp"
+            android:text="PAUSE" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:onClick="onClick"
+            android:padding="14dp"
+            android:text="STOP" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:onClick="onClick"
+            android:padding="14dp"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/btnForward"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:onClick="onClick"
+            android:padding="14dp"
+            android:text="NEXT" />
+
+        <Switch
+            android:id="@+id/switchLoop"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#9C27B0"
+            android:padding="14dp"
+            android:text="ПОВТОР"
+            android:textColor="#FFD740"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="634dp"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRaw2"
+        android:layout_width="382dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:backgroundTint="#052DF4"
+        android:onClick="onClickSource"
+        android:text="Rapture"
+        android:textColor="#4CFF00"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRaw"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
